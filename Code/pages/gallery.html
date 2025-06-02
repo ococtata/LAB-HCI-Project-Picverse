@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Picverse</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="../assets/Arasaka+Logo+Resources/logo.png" alt="Picverse" class="logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="./gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="./community.html" class="nav-link">Community</a></li>
+                <li><a href="./submission.html" class="nav-link">Submit</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <div class="container">
+            <section class="trending-section">
+                <h2 class="section-title">Trending Tags</h2>
+                <div class="tags-container">
+                    <span class="tag" data-tag="bladerunner">#bladerunner</span>
+                    <span class="tag" data-tag="barbie">#barbie</span>
+                    <span class="tag" data-tag="2049">#2049</span>
+                    <span class="tag" data-tag="lalaland">#lalaland</span>
+                    <span class="tag" data-tag="fallguy">#fallguy</span>
+                    <span class="tag" data-tag="imhim">#imhim</span>
+                </div>
+                
+            </section>
+
+            <section class="tag-section" id="bladerunner">
+                <h3 class="tag-title">Bladerunner</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal('The Pointing Man', 'Ryan Gosling', '../assets/post/post1.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post1.jpg" alt="The Pointing Man">
+                        <div class="gallery-info">
+                            <h4>The Pointing Man</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Thumbs Up Man', 'Ryan Gosling', '../assets/post/post2.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post2.jpg" alt="Thumbs Up Man">
+                        <div class="gallery-info">
+                            <h4>Thumbs Up Man</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Modern Face', 'Ryan Gosling', '../assets/post/post3.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post3.jpg" alt="Modern Face">
+                        <div class="gallery-info">
+                            <h4>Modern Face</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Classic Beauty', 'Ryan Gosling', '../assets/post/post4.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post4.jpg" alt="Classic Beauty">
+                        <div class="gallery-info">
+                            <h4>Classic Beauty</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Red Facade', 'Ryan Gosling', '../assets/post/post5.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post5.jpg" alt="Red Facade">
+                        <div class="gallery-info">
+                            <h4>Expression Study</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tag-section hidden" id="barbie">
+                <h3 class="tag-title">Barbie</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal('The Pointing Man', 'Ryan Gosling', '../assets/post/post6.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post6.jpg" alt="The Pointing Man">
+                        <div class="gallery-info">
+                            <h4>The Pointing Man</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Thumbs Up Man', 'Ryan Gosling', '../assets/post/post7.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post7.jpg" alt="Thumbs Up Man">
+                        <div class="gallery-info">
+                            <h4>Thumbs Up Man</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Modern Face', 'Ryan Gosling', '../assets/post/post8.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post8.jpg" alt="Modern Face">
+                        <div class="gallery-info">
+                            <h4>Modern Face</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Classic Beauty', 'Ryan Gosling', '../assets/post/post9.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post9.jpg" alt="Classic Beauty">
+                        <div class="gallery-info">
+                            <h4>Classic Beauty</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Red Facade', 'Ryan Gosling', '../assets/post/post10.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post10.jpg" alt="Red Facade">
+                        <div class="gallery-info">
+                            <h4>Expression Study</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tag-section hidden" id="lalaland">
+                <h3 class="tag-title">Lalaland</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openModal('The Pointing Man', 'Ryan Gosling', '../assets/post/post11.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post11.jpg" alt="The Pointing Man">
+                        <div class="gallery-info">
+                            <h4>The Pointing Man</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Thumbs Up Man', 'Ryan Gosling', '../assets/post/post12.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post12.jpg" alt="Thumbs Up Man">
+                        <div class="gallery-info">
+                            <h4>Thumbs Up Man</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Modern Face', 'Ryan Gosling', '../assets/post/post13.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post13.jpg" alt="Modern Face">
+                        <div class="gallery-info">
+                            <h4>Modern Face</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Classic Beauty', 'Ryan Gosling', '../assets/post/post14.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post14.jpg" alt="Classic Beauty">
+                        <div class="gallery-info">
+                            <h4>Classic Beauty</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openModal('Red Facade', 'Ryan Gosling', '../assets/post/post15.jpg', 'A stunning portrait of a beautiful man.')">
+                        <img src="../assets/post/post15.jpg" alt="Red Facade">
+                        <div class="gallery-info">
+                            <h4>Expression Study</h4>
+                            <p>by: Ryan Gosling</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="../assets/Arasaka+Logo+Resources/logo.png" alt="">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-artist"></p>
+                <p id="modal-description"></p>
+                <div class="modal-actions">
+                    <button class="like-btn">♥ Like</button>
+                    <button class="share-btn">Share</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/Arasaka+Logo+Resources/logo.png" alt="Picverse" class="footer-logo">
+                    <span class="footer-brand-text">Picverse</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about-us.html">About Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

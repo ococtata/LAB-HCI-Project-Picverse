@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Work - Picverse</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="../assets/Arasaka+Logo+Resources/logo.png" alt="Picverse" class="logo">
+                <span class="brand-text">Picverse</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="community.html" class="nav-link">Community</a></li>
+                <li><a href="submission.html" class="nav-link active">Submit</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="submission-main">
+        <div class="container">
+            <h1 class="page-title">Submit Your Work</h1>
+            
+            <form id="submission-form" class="submission-form" novalidate>
+                <div class="form-grid">
+                    <div class="upload-section">
+                        <div class="file-upload" id="file-upload">
+                            <div class="upload-icon">📁</div>
+                            <p>Choose a file or drag and drop it here</p>
+                            <input type="file" id="file-input" accept="image/*" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-fields">
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="title">Title*</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Description*</label>
+                            <textarea id="description" name="description" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tags">Tags*</label>
+                            <select id="tags" name="tags" required>
+                                <option value="">Select a tag</option>
+                                <option value="portraits">Portraits</option>
+                                <option value="digital">Digital</option>
+                                <option value="fantasy">Fantasy</option>
+                                <option value="abstract">Abstract</option>
+                                <option value="nature">Nature</option>
+                                <option value="urban">Urban</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Is this AI Generated?*</legend>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="ai-generated" value="no" required>
+                                        <span class="radio-custom"></span>
+                                        No, it's not AI generated
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="ai-generated" value="yes" required>
+                                        <span class="radio-custom"></span>
+                                        Yes, it's AI generated
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Work</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../assets/Arasaka+Logo+Resources/logo.png" alt="Picverse" class="footer-logo">
+                    <span class="footer-brand-text">Picverse</span>
+                </div>
+                <div class="footer-links">
+                    <a href="./about-us.html">About Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
